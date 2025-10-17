@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazu Todo App - List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="flex justify-between fixed top-0 left-0 min-w-full bg-gray-900/80 p-5 text-gray-50">
+        <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-table-list"></i>
+            <a href="/index.html" class="text-lg font-bold">Kazu Todo App</a>
+        </div>
+
+        <ul class="flex flex-row font-semibold text-lg space-x-5">
+            <li><a href="/index.html" class="hover:text-gray-400">Home</a></li>
+            <li><a href="/list.html" class="hover:text-gray-400 mr-5">List</a></li>
+        </ul>
+    </header>
+
+    <div class="flex flex-col items-center text-center 
+            bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 
+            min-h-screen text-gray-200 space-y-4 py-20">
+
+        <form action="" method="get"
+            class="bg-white/10 rounded-2xl backdrop-blur shadow-xl p-6 space-y-6 w-150 text-left">
+            <h1 class="font-bold text-3xl">To-Do List</h1>
+            <p>Add your tasks below</p>
+
+            <div class="flex flex-row gap-3">
+                <input type="text" placeholder="Add your task here" id="input-box"
+                    class="flex-1 rounded-lg bg-white/90 text-gray-900 px-4 py-3" />
+
+                <button type="submit" class="inline-flex items-center justify-center gap-2
+                 rounded-lg bg-blue-600 hover:bg-blue-700
+                 px-5 py-3 font-medium text-white">
+                    Add
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <ul id="list-container" class="flex flex-col text-xl space-y-1 pl-3">
+                <li>
+                    <div class="flex items-center">
+                        <input id="checkbox" type="checkbox" value="" class="h-6 w-6">
+                        <label for="checkbox" class="py-3 ml-2 text-lg">Task 1</label>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex items-center">
+                        <input id="checkbox" type="checkbox" value="" class="h-6 w-6">
+                        <label for="checkbox" class="py-3 ml-2 text-lg">Task 2</label>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex items-center">
+                        <input id="checkbox" type="checkbox" value="" class="h-6 w-6">
+                        <label for="checkbox" class="py-3 ml-2 text-lg">Task 3</label>
+                    </div>
+                </li>
+            </ul>
+        </form>
+
+    </div>
+
+
+    <footer class="fixed w-full bottom-0 left-0 bg-gray-900/80 text-gray-200 text-center py-3">
+        <p>&copy; 2025 Kazu. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
